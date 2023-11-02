@@ -11,6 +11,10 @@
 
 __I suggest you use the debugger in visual studio to track the zoo singleton and ensure that its behaviour is exactly as you expect__
 
+## Singleton pattern (2)
+
+Create a singleton that acts as a random number generator - such that each of your animals has a unique but random ID.
+
 ## Factory Method pattern
 
 
