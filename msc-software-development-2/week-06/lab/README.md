@@ -10,7 +10,11 @@ We use the industry  standard tool, Docker, to build a consistent cross-platform
 
 #### On Windows
 
-You need to ensure the wsl (Windows subsystem for Linux) is enabled and that you have installed the 'kernal update package'. 
+Install docker desktop from: https://www.docker.com/products/docker-desktop/
+
+##### NOTE
+
+You MAY need to ensure the wsl (Windows subsystem for Linux) is enabled and that you have installed the 'kernal update package'. 
 
 Docker documentation is here  [installing Docker on Windows] (https://docs.docker.com/desktop/windows/wsl/)
 
@@ -51,13 +55,28 @@ Make sure you also have node.js installed
 
 https://docs.docker.com/desktop/install/linux-install/
 
+## Test your Docker installation
+
+1. Make sure docker desktop is runnning
+2. Open visual studio code
+3. Open a terminal window in VS code
+4. enter the following command:
+
+```
+docker run hello-world
+```
+If your installation is working correctly you will see the image being pulled from the remote repository and you will see the 'hello world' message.
 
 
 ## Docker development environment quickstart
 
+These steps will build a full-stack web development environment you can use for the labs and for your project (when you start sprint 3)
+
 __The video for the quickstart set up described below is here: [https://roehampton.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c98901e7-f193-4b9b-b071-af3e018163fb](https://roehampton.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c98901e7-f193-4b9b-b071-af3e018163fb)__
 
 The video takes you through from step 2.
+
+FOLLOW THESE STEPS CAREFULLY:
 
 1. Ensure Docker is installed on your computer OR use the azure virtual machine installation.
 2. Download the zip file of the startup files you'be been given and extract it.
@@ -153,7 +172,7 @@ async function query(sql, params) {
    3. Click onto the sd2-test database in the left side, and, using the SQL    window, paste the contents of the SQL file there.  Click run. You will now have some content for the test table
    4. Access http://127.0.0.1:3000/db_test to see the contents of the table
    5. Add two more rows to the test table via phpmyadmin
-   6. Now amend the code in db_test so that it loops through each of the rows of the table, giving the following output:
+   6. Now amend the code in the db_test so that it loops through each of the rows of the table, giving the following output:
    
 Person with id 1 is Lisa
 
